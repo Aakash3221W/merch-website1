@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="front.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <header>
+      <div class="logo">Anime Point <img id="logo-img" src="/img/Logo.jpg" alt=""></div>
+      <div class="container">
+        <form action="https://www.google.com/search" class="search" id="search-bar">
+            <input type="search" placeholder="What are you Looking for..." name="q" class="search__input">
+
+            <div class="search__button" id="search-button">
+                <i class="ri-search-2-line search__icon"></i>
+                <i class="ri-close-line search__close"></i>
+            </div>
+        </form>
+      </div>
+      <script>/*=============== SEARCH BAR JS ===============*/
+        const toggleSearch = (search, button) =>{
+           const searchBar = document.getElementById(search),
+                 searchButton = document.getElementById(button)
+        
+           searchButton.addEventListener('click', () =>{
+               // We add the show-search class, so that the search bar expands
+               searchBar.classList.toggle('show-search')
+           })
+        }
+        toggleSearch('search-bar', 'search-button')</script>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="main.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="/pages/Shop.html">Shop</a>
+                </li>
+                <li id="about-link">
+                    <a href="#about" >about</a>
+                </li>
+                <li id="contact-link">
+                    <a href="#contact" >contact</a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        // Add event listeners to the "About Us" and "Contact Us" links
+        document.getElementById('about-link').addEventListener('click', function() {
+            document.getElementById('footer').scrollIntoView();
+        });
+
+        document.getElementById('contact-link').addEventListener('click', function() {
+            document.getElementById('footer').scrollIntoView();
+        });
+    </script>
+    <script>
+        hamburger = document.querySelector ('.hamburger');
+        hamburger.onclick = function() {
+            navBar = document.querySelector ('.nav-bar');
+            navBar.classList.toggle ('active');
+        }
+    </script>
+        <img src="/img/OtakuxOnepiece-Banner.jpg" alt="" class="b1">
+        <div class="sample1">
+            <div class="product-menu">
+                <div class="product-item">
+                    <img src="/img/130.jpg" alt="T-Shirt">
+                    <a href="">Posters</a>
+                </div>
+                <div class="product-item">
+                    <img src="/img/238-1.jpg" alt="T-Shirt">
+                    <a href="">Hoodie</a>
+                </div>
+                <div class="product-item">
+                    <img src="/img/Original-One-Piece-Toei-Animation-Lil-Light-Bepo-Low-Light-Series-Desktop-Ornaments-Third-Gear-Christmas.webp" alt="T-Shirt">
+                    <a href="">Lamps</a>
+                </div>
+                <div class="product-item">
+                    <img src="/img/one-piece-shirt-4.jpg" alt="T-Shirt">
+                    <a href="">T-Shirts</a>
+                </div>
+    
+            </div>
+            <footer>
+                <div class="footer-content" id="footer">
+                    <div class="footer-column">
+                        <h3>About Us</h3>
+                        <p>We are a team of passionate designers and developers who are dedicated to providing the best merchandise to our users. We believe that design should be unique, stylish, and accessible to everyone.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <p>Email: info@merchsite.com<br>Phone: +1 (123) 456-7890<br>Address: 123 Main St, Anytown, USA</p>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2023 Merch Site. All rights reserved.</p>
+                </div>
+            </footer>
+    
+</body>
+</html>

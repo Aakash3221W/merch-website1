@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    top: 50%; 
+}
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0;
+    font-family: 'Montserrat', sans-serif;
+    backdrop-filter: blur(10px); 
+}
+.title_small{
+    font-size: 20px;
+}
+.form_container{
+    display: grid;
+    margin-top: 20px;
+}
+label{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+input,select,textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: none;
+}
+input:focus{
+    outline-color: rgb(234, 151, 209);
+}
+.btn{
+    display:block;
+    justify-content:right;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-left: 42.5%;
+}
+
+/* .apply_box:hover{
+    background-color: rgb(37, 171, 205);
+} */
+
+button{
+    background-color: #cccccc;
+    border: rgb(0, 0, 0) solid 1px;
+    border-radius: 5px;
+    padding: 5px 5px;
+    /* margin-left: 90%; */
+}
+button:hover{
+    background-color: rgb(238, 221, 197);
+    cursor: pointer;
+}
+.text_control{
+    grid-column: 1 / span 2;
+}
+.text_control textarea{
+    width: 100%;
+}
+.text_control, label{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+@media (max-width: 460px) {
+    .text_control{
+        grid-column: 1 / span 1;
+    }
+};
+#lgd {
+    padding-left: 5px !important;
+}
+fieldset{
+    border-radius: 5px;
+    padding-left: 5px;
+}
+legend{
+    font-size: 14px;
+}

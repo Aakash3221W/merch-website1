@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="sho.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <header>
+      <div class="logo">Anime Point <img id="logo-img" src="/img/Logo.jpg" alt=""></div>
+      <div class="container">
+        <form action="https://www.google.com/search" class="search" id="search-bar">
+            <input type="search" placeholder="What are you Looking for..." name="q" class="search__input">
+
+            <div class="search__button" id="search-button">
+                <i class="ri-search-2-line search__icon"></i>
+                <i class="ri-close-line search__close"></i>
+            </div>
+        </form>
+      </div>
+      <script>/*=============== SEARCH BAR JS ===============*/
+        const toggleSearch = (search, button) =>{
+           const searchBar = document.getElementById(search),
+                 searchButton = document.getElementById(button)
+        
+           searchButton.addEventListener('click', () =>{
+               // We add the show-search class, so that the search bar expands
+               searchBar.classList.toggle('show-search')
+           })
+        }
+        toggleSearch('search-bar', 'search-button')</script>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+              <li>
+                    <a href="/main.html" class="active">Home</a>
+              </li>
+              <li>
+                    <a href="#">Shop</a>
+              </li>
+              <li id="about-link">
+                  <a href="#about" >about</a>
+              </li>
+              <li id="contact-link">
+                  <a href="#contact" >contact</a>
+              </li>
+              <li>
+                  <a href="#"></a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+  <script>
+      // Add event listeners to the "About Us" and "Contact Us" links
+      document.getElementById('about-link').addEventListener('click', function() {
+          document.getElementById('footer').scrollIntoView();
+      });
+
+      document.getElementById('contact-link').addEventListener('click', function() {
+          document.getElementById('footer').scrollIntoView();
+      });
+  </script>
+    <script>
+        hamburger = document.querySelector ('.hamburger');
+        hamburger.onclick = function() {
+            navBar = document.querySelector ('.nav-bar');
+            navBar.classList.toggle ('active');
+        }
+    </script>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="items/one-piece-shirt-7.jpg" alt="Product Image" class="card-image">
+                <div class="card-info">
+                  <h2 class="card-title">One Piece T-shirts – Jinbe The Knight of the Sea  T-Shirt</h2>
+                  <p class="card-price">$19.99</p>
+                  <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="items/one-piece-shirt-4.jpg" alt="Product Image" class="card-image">
+                <div class="card-info">
+                  <h2 class="card-title">POne Piece T-shirts – God Usopp One Piece Anime T-Shirt</h2>
+                  <p class="card-price">$19.99</p>
+                  <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="items/one-piece-shirt.jpg" alt="Product Image" class="card-image">
+                <div class="card-info">
+                  <h2 class="card-title">One Piece T-shirts – Caesar Clown One Piece Anime T-Shirt</h2>
+                  <p class="card-price">$19.99</p>
+                  <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="items/Luffy-All-Transformations.jpg" alt="Product Image" class="card-image">
+                <div class="card-info">
+                  <h2 class="card-title">One Piece T-shirts – Luffy All Transformations Anime T-Shirt</h2>
+                  <p class="card-price">$19.99</p>
+                  <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="items/King-of-Hell.jpg" alt="Product Image" class="card-image">
+                <div class="card-info">
+                  <h2 class="card-title">One Piece Hoodies – Zoro King of Hell Anime Pullover Hoodie</h2>
+                  <p class="card-price">$19.99</p>
+                  <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                </div>
+              
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                  <img src="items/269.jpg" alt="Product Image" class="card-image">
+                  <div class="card-info">
+                    <h2 class="card-title">Luffy Gear 5 HaHa One Piece Shape Anime Non-Slip Home Decor Rugs</h2>
+                    <p class="card-price">$19.99</p>
+                    <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="items/270.jpg" alt="Product Image" class="card-image">
+                  <div class="card-info">
+                    <h2 class="card-title">Trafualger D Law Shape Anime Non-Slip Home Decor Rugs</h2>
+                    <p class="card-price">$19.99</p>
+                    <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="items/Harajuku-Tumblr-Graphic-Ladies-Shopping-Bag-Handbags-Luffy-Funny-Face-Anime-Tote-Bags-Women-Eco-Reusable-1.jpg_640x640-1-300x300.jpg" alt="Product Image" class="card-image">
+                  <div class="card-info">
+                    <h2 class="card-title">One Piece T-shirts – Caesar Clown One Piece Anime T-Shirt</h2>
+                    <p class="card-price">$19.99</p>
+                    <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="items/Harajuku-Tumblr-Graphic-Ladies-Shopping-Bag-Handbags-Luffy-Funny-Face-Anime-Tote-Bags-Women-Eco-Reusable-300x300.jpg" alt="Product Image" class="card-image">
+                  <div class="card-info">
+                    <h2 class="card-title">One Piece Tote Bag – Luffy Funny Face Anime Tote Bags</h2>
+                    <p class="card-price">$19.99</p>
+                    <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="items/One-Piece-Funny-Luffy-Zoro-And-Nami-Printing-Female-Shoulder-Canvas-Bag-Large-Capacity-Tote-Bag-300x300.jpg" alt="Product Image" class="card-image">
+                  <div class="card-info">
+                    <h2 class="card-title">One Piece Tote Bag–One Piece Pirate Crew Printing Canvas Bag</h2>
+                    <p class="card-price">$19.99</p>
+                    <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                  </div>
+                
+                </div>
+              </div>
+              <div class="card-container">
+                <div class="card">
+                    <img src="items/product-image-1334251245-300x300.jpg" alt="Product Image" class="card-image">
+                    <div class="card-info">
+                      <h2 class="card-title">One Piece anime Face Mask – Chibi Luffy official merch</h2>
+                      <p class="card-price">$19.99</p>
+                      <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="items/product-image-1362484389-300x300.jpg" alt="Product Image" class="card-image">
+                    <div class="card-info">
+                      <h2 class="card-title">One Piece anime Face Mask – East Blue Arc official merch</h2>
+                      <p class="card-price">$19.99</p>
+                      <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="items/product-image-1362484391-300x300.jpg" alt="Product Image" class="card-image">
+                    <div class="card-info">
+                      <h2 class="card-title">One Piece anime Face Mask – Gear 2 Luffy official merch</h2>
+                      <p class="card-price">$19.99</p>
+                      <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="items/product-image-1362484395-300x300.jpg" alt="Product Image" class="card-image">
+                    <div class="card-info">
+                      <h2 class="card-title">One Piece anime Face Mask – Chopper Luffy Zoro official merch</h2>
+                      <p class="card-price">$19.99</p>
+                      <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="items/product-image-1362484396-300x300.jpg" alt="Product Image" class="card-image">
+                    <div class="card-info">
+                      <h2 class="card-title">One Piece anime Face Mask – Shichibukai official merch</h2>
+                      <p class="card-price">$19.99</p>
+                      <button class="card-buy-btn" onclick="goToAddressPage()">Buy Now</button>
+                    </div>
+                  
+                  </div>
+                </div>
+
+            <footer class="footer1">
+                <div class="footer-container">
+                  <div class="footer-column1">
+                    <h3>Worldwide shipping</h3>
+                    <p>We ship to over 200 countries</p>
+                  </div>
+                  <div class="footer-column1">
+                    <h3>Shop with confidence</h3>
+                    <p>24/7 Protected from clicks to delivery</p>
+                  </div>
+                  <div class="footer-column1">
+                    <h3>International Warranty</h3>
+                    <p>Offered in the country of usage</p>
+                  </div>
+                  <div class="footer-column1">
+                    <h3>100% Secure Checkout</h3>
+                    <p>PayPal / MasterCard / Visa</p>
+                  </div>
+                </div>
+              </footer>
+              <footer class="footer2" id="footer">
+                <div class="footer-content" id="footer">
+                    <div class="footer-column2">
+                        <h3>About Us</h3>
+                        <p>We are a team of passionate designers and developers who are dedicated to providing the best merchandise to our users. We believe that design should be unique, stylish, and accessible to everyone.</p>
+                    </div>
+                    <div class="footer-column2">
+                        <h3>Contact Us</h3>
+                        <p>Email: info@merchsite.com<br>Phone: +1 (123) 456-7890<br>Address: 123 Main St, Anytown, USA</p>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2023 Merch Site. All rights reserved.</p>
+                </div>
+            </footer>
+            <script>
+              function goToAddressPage() {
+                  window.location.href = 'address.html';
+              }
+          </script>
+
+        </body>
+        </html>
